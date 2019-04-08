@@ -4,7 +4,7 @@
   "description": "> JavaScript performance benchmarks that you can share via URL",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "pika-web --production"
   },
   "repository": {
     "type": "git",
