@@ -35,7 +35,11 @@
     <link rel="stylesheet" href="/library/prism.css" />
     <link rel="stylesheet" href="/routes/home/index.css" />
     <script defer src="/library/prism.js"></script>
-    <script defer src="/index.js" type="module"></script>
+    <script type="module">
+      import {app} from '/index.js';
+      import {React, ReactDOM} from  '/web_modules/es-react-production/index.js';
+      app({React, ReactDOM});
+    </script>
   </head>
   <body></body>
 </html>

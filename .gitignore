@@ -1,1 +1,3 @@
 .netlify/
+web_modules/
+node_modules/

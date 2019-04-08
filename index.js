@@ -1,11 +1,7 @@
-import htm from 'https://unpkg.com/htm@2.1.1/dist/htm.mjs'
-import csz from 'https://unpkg.com/csz@0.1.2/index.js'
+import htm from '/web_modules/htm.js';
+import csz from '/web_modules/csz/index.js';
 
-import(location.hostname === 'localhost'
-  ? 'https://unpkg.com/es-react@16.8.30/index.js'
-  : 'https://unpkg.com/es-react-production@16.8.30/index.js').then(app)
-
-function app({ React, ReactDOM }) {
+export function app({ React, ReactDOM }) {
   window.React = React
   window.css = csz
   window.html = htm.bind(React.createElement)

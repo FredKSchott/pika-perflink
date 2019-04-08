@@ -1,0 +1,37 @@
+{
+  "name": "perflink",
+  "version": "1.0.0",
+  "description": "> JavaScript performance benchmarks that you can share via URL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukejacksonn/perflink.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukejacksonn/perflink/issues"
+  },
+  "homepage": "https://github.com/lukejacksonn/perflink#readme",
+  "@pika/web": {
+    "webDependencies": [
+      "csz/index.js",
+      "es-react/index.js",
+      "es-react-production/index.js",
+      "htm"
+    ]
+  },
+  "dependencies": {
+    "csz": "^1.0.0",
+    "es-react": "^16.8.30",
+    "es-react-production": "^16.8.30",
+    "htm": "^2.1.1"
+  },
+  "devDependencies": {
+    "@pika/web": "^0.4.1"
+  }
+}
