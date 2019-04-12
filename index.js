@@ -10,8 +10,8 @@ export function app({ React, ReactDOM }) {
     <div></div>
   `
   const Route = {
-    '/': React.lazy(() => import('./routes/home/index.js')),
-    '*': React.lazy(() => import('./routes/notfound/index.js')),
+    '/': React.lazy(() => window.turbo.preload('/routes/home/index.js') || import('/routes/home/index.js')),
+    '*': React.lazy(() => window.turbo.preload('/routes/notfound/index.js') || import('/routes/notfound/index.js')),
   }
 
   ReactDOM.render(
